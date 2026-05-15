@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>DrishyaVisualisers | Contact Us</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#050505;
+      color:white;
+      overflow-x:hidden;
+      font-family:'Outfit',sans-serif;
+    }
+
+    h1,h2,h3{
+      font-family:'Cormorant Garamond',serif;
+    }
+
+    /* GOLD GLOW */
+
+    .gold-text{
+      background:linear-gradient(to right,#f5d58a,#b88a44,#fff2c2);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    /* GLASS CARD */
+
+    .glass{
+      background:rgba(255,255,255,0.03);
+      backdrop-filter:blur(18px);
+      border:1px solid rgba(255,215,120,0.15);
+      box-shadow:
+      0 0 30px rgba(255,215,120,0.05);
+    }
+
+    /* INPUT */
+
+    .input-style{
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,215,120,0.08);
+      transition:0.4s;
+    }
+
+    .input-style:focus{
+      border-color:#d4af37;
+      outline:none;
+      box-shadow:0 0 20px rgba(212,175,55,0.15);
+    }
+
+    /* GOLD BUTTON */
+
+    .gold-btn{
+      background:linear-gradient(
+      135deg,
+      #f5d58a,
+      #b88a44,
+      #fff2c2
+      );
+
+      color:#111;
+      font-weight:600;
+      transition:0.4s;
+    }
+
+    .gold-btn:hover{
+      transform:translateY(-3px) scale(1.01);
+      box-shadow:0 10px 30px rgba(212,175,55,0.3);
+    }
+
+    /* BACKGROUND GLOW */
+
+    .blur-circle{
+      position:absolute;
+      border-radius:50%;
+      filter:blur(130px);
+      opacity:0.12;
+      z-index:0;
+    }
+
+    /* WHATSAPP FLOAT */
+
+    .whatsapp-float{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      z-index:999;
+      animation:float 2s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px);
+      }
+
+      50%{
+        transform:translateY(-10px);
+      }
+
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    /* GOLD BORDER */
+
+    .gold-border{
+      border:1px solid rgba(212,175,55,0.2);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- BACKGROUND LIGHTS -->
+
+<div class="blur-circle bg-yellow-500 w-[350px] h-[350px] top-0 left-0"></div>
+
+<div class="blur-circle bg-amber-300 w-[400px] h-[400px] bottom-0 right-0"></div>
+
+<!-- HERO SECTION -->
+
+<section class="relative min-h-screen flex items-center justify-center px-6 py-20">
+
+  <div class="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+    <!-- LEFT CONTENT -->
+
+    <div data-aos="fade-right">
+
+      <p class="uppercase tracking-[6px] text-yellow-500 text-sm mb-6">
+        Contact Us
+      </p>
+
+      <h1 class="text-5xl md:text-7xl leading-tight font-bold mb-8">
+
+        Crafting
+        <span class="gold-text">
+          Cinematic
+        </span>
+
+        Visual Experiences.
+
+      </h1>
+
+      <p class="text-gray-300 text-lg leading-9 max-w-xl mb-10">
+
+        DrishyaVisualisers creates luxury architectural visualisations,
+        cinematic storytelling, premium digital experiences,
+        and immersive creative solutions for visionary brands.
+
+      </p>
+
+      <!-- ADDRESS -->
+
+      <div class="space-y-5">
+
+        <div class="glass rounded-3xl p-6 hover:scale-[1.02] transition duration-300">
+
+          <h3 class="text-2xl gold-text mb-3">
+            Office Address
+          </h3>
+
+          <p class="text-gray-300 leading-8">
+            Vasavi Sky City,<br>
+            Gachibowli Cir, Telecom Nagar,<br>
+            Gachibowli, Hyderabad,<br>
+            Telangana 500081
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:scale-[1.02] transition duration-300">
+
+          <h3 class="text-2xl gold-text mb-3">
+            Contact Information
+          </h3>
+
+          <p class="text-gray-300 leading-8">
+            info@drishyavisualisers.com
+            <br>
+            +91 95159 96609
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+
+    <div
+      class="glass rounded-[40px] p-8 md:p-12"
+      data-aos="fade-left"
+    >
+
+      <h2 class="text-5xl gold-text mb-3">
+        Get In Touch
+      </h2>
+
+      <p class="text-gray-400 mb-10">
+        Let’s discuss your next premium project.
+      </p>
+
+      <!-- FORMSPREE FORM -->
+
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="space-y-6"
+      >
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          class="input-style w-full rounded-2xl px-5 py-4 text-white"
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          required
+          class="input-style w-full rounded-2xl px-5 py-4 text-white"
+        >
+
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          class="input-style w-full rounded-2xl px-5 py-4 text-white"
+        >
+
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Tell us about your project..."
+          required
+          class="input-style w-full rounded-2xl px-5 py-4 text-white resize-none"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="gold-btn w-full py-4 rounded-2xl text-lg"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="px-6 pb-20 relative z-10">
+
+  <div
+    class="max-w-7xl mx-auto rounded-[35px] overflow-hidden gold-border"
+    data-aos="zoom-in"
+  >
+
+    <iframe
+      src="https://www.google.com/maps?q=Vasavi+Sky+City+Gachibowli+Hyderabad&output=embed"
+      width="100%"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+  </div>
+
+</section>
+
+<!-- WHATSAPP FLOAT -->
+
+<a
+  href="https://wa.me/919515996609"
+  target="_blank"
+  class="whatsapp-float"
+>
+
+  <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition duration-300">
+
+    💬
+
+  </div>
+
+</a>
+
+<!-- AOS SCRIPT -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration:1200,
+    once:true
+  });
+</script>
+
+</body>
+</html>
